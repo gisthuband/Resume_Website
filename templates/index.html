@@ -1,0 +1,158 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Chris Coble</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+ 
+  {% block content %}
+  <body>
+  <div class="banner">
+      <ul class="nav">
+        <h1>Chris Coble: Research Professional in Gene Therapy and Data Science</h1>
+      </ul>
+  </div>
+  
+  <br></br>
+  
+  
+  <h2>Data Science Work:</h2>
+  
+  <br></br>
+  
+  <li>Sudan Healthcare Accesibility: Lead Machine Learning Engineer</li>
+  
+  <br></br>
+  
+  <a href="https://www.omdena.com/chapter-challenges/analyzing-healthcare-accessibility-in-sudan">
+    <button>Project Description</button>
+  </a>
+  
+  <br></br>
+  
+  <li>Crop Disease Detection: Lead Machine Learning Engineer</li>
+  
+  <br></br>
+  
+  <a href="https://www.omdena.com/chapter-challenges/ai-powered-early-detection-of-crop-diseases-in-kenyan-smallholder-farms">
+    <button>Project Description</button>
+  </a>
+  
+  <br></br>
+  
+  <li>Kitwe News Aggregator and Analyzer: Lead Machine Learning Engineer</li>
+  
+  <br></br>
+  
+  <a href="https://www.omdena.com/chapter-challenges/local-news-aggregator-and-analyzer-for-kitwe-zambia">
+    <button>Project Description</button>
+  </a>
+  
+  
+  <br></br><br></br>
+  
+  <h2>Applications</h2>
+  
+  <a href="https://app-protein-interaction.streamlit.app/">
+      <button>Protein Interaction Predictor Application</button>
+    </a>
+  
+  <br></br><br></br><br></br>
+  
+  <a href="https://github.com/gisthuband">
+  <button>Github Account</button>
+  </a>
+  
+  <h1>Math Equation Display</h1>
+    <div id="math-container"></div>
+  
+    <script>
+      // Define the math equation in LaTeX format
+      var equation = 4n;
+  
+      // Inject the equation into the HTML page
+      document.getElementById('math-container').innerHTML = equation;
+  
+      // Update MathJax rendering after adding the equation
+      MathJax.typeset();
+    </script>
+  
+  <h1>this is to showcase a button linked to a function</h1>
+  
+  <script>
+    function clickFunction() {
+      document.getElementById("demo").innerHTML = 2+4;
+    }
+  </script>
+  
+  <p id="demo">Use this button to showcase</p>
+  <button type="button" onclick="clickFunction()">Try it</button>
+  
+  <br></br><br></br><br></br>
+  
+  <h1>Research Experience:</h1>
+  
+  <p id="demo_tag"></p>
+  
+  <script>
+  document.getElementById("demo_tag").innerHTML = 2+3;
+  </script>
+  
+  <h1>Varodayan Lab Experimental Design</h1>
+  <img src="/static/images/Varodayan_Illustration.png">
+  <h2>The Hypothesis is that if a mice drinks alcohol, then its ACE II expression increases, allowing for more COVID-19 particles to infect the host</h2>
+  
+  <br></br>
+  <h2>Skills:</h2>
+  <li>Website Maintenance</li><li>qPCR</li><li>Research Budgeting</li><li>Lab Construction</li><li>Inventory Management</li>
+  <br></br><br></br><br></br>
+  
+  <br></br>
+  
+  <h1>Grewer Lab Experimental Design</h1>
+  <img src="/static/images/Grewer_Illustration.png">
+  <h2>The Hypothesis is that if you conjugate a sterically bulky molecule onto an amino acid, you can block small amino acid transporters, causing a starvation within cancer cells</h2>
+  
+  <br></br>
+  <h2>Skills:</h2>
+  <li>Plasmid Preparation</li><li>Transfection</li><li>Research Skills</li><li>Organic Synthesis</li><li>Fluorescence Microscpy</li>
+  <br></br><br></br><br></br>
+  
+  <br></br>
+  
+  <h1>Flynn Lab Experimental Design</h1>
+  <img src="/static/images/Flynn_Illustration.png">
+  <h2>The Hypothesis is that if you treat cells with Beta-lactam antibiotics such as Amoxicillin, cells will be protected from excitotoxic conditions that would normally cause excitotoxicity</h2>
+  <br></br>
+  <h2>Skills:</h2>
+  <li>Cell Culturing</li><li>Molecular Cloning</li><li>Research Skills</li><li>Viability Assays</li><li>Site Directed Mutagenesis</li>
+  <br></br><br></br><br></br>
+  
+  <h2>Contact Information:</h2>
+  
+  <br></br>
+  
+  <li>Cell: (607) 331-0017</li>
+  <li>Email: ccobe2221@gmail.com</li>
+  <li>
+    <a href="https://www.linkedin.com/in/chris-coble-machine-learning-engineer/">
+      <button>Click for LinkedIn</button>
+    </a> </li>
+  
+    <li>
+      <a href="https://github.com/gisthuband">
+        <button>Click for Github</button>
+      </a> </li>
+   
+  <br></br><br></br>
+  
+  <br></br><br></br>
+  
+  <h3>all images made possible by BioRender</h3>
+  
+  </body>
+  {% endblock %}
+
+</section>
